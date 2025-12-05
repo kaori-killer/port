@@ -1,0 +1,27 @@
+{
+  "name": "@kaori-killer/port",
+  "version": "0.0.0-onlyCJS",
+  "description": "CLI tool for checking ports and killing processes",
+  "main": "src/cli.js",
+  "files": [
+    "src"
+  ],
+  "bin": {
+    "port": "./src/cli.js"
+  },
+  "author": "Sojeong Yoo",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  },
+  "keywords": ["port", "cli", "process", "kill", "lsof", "network"],
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write ."
+  }
+}
