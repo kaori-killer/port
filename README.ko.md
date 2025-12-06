@@ -18,28 +18,34 @@ npm install -g @kaori-killer/port
 npm install @kaori-killer/port
 ```
 
-전역 설치 후 어디서든 `port` 명령어를 사용할 수 있습니다.
-
 ## 사용법
 
-### 포트 목록 확인
+### 전역 설치
 
-모든 사용 중인 포트 목록 보기:
+전역 설치 후 어디서든 `port` 명령어를 사용할 수 있습니다:
 
 ```bash
 port ls
-```
-
-### 특정 포트 확인
-
-```bash
 port check 3000
+port kill 3000
 ```
 
-### 프로세스 종료
+### 로컬 설치
 
+로컬 설치 시 `npx` 또는 `yarn`을 사용합니다:
+
+**npx 사용:**
 ```bash
-port kill 3000
+npx port ls
+npx port check 3000
+npx port kill 3000
+```
+
+**yarn 사용:**
+```bash
+yarn port ls
+yarn port check 3000
+yarn port kill 3000
 ```
 
 ## 왜 port를 사용하나요?

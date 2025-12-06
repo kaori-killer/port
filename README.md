@@ -18,28 +18,34 @@ npm install -g @kaori-killer/port
 npm install @kaori-killer/port
 ```
 
-After global installation, you can use the `port` command from anywhere.
-
 ## Usage
 
-### List Ports
+### Global Installation
 
-View all listening ports:
+After global installation, you can use the `port` command from anywhere:
 
 ```bash
 port ls
-```
-
-### Check Port
-
-```bash
 port check 3000
+port kill 3000
 ```
 
-### Kill Process
+### Local Installation
 
+With local installation, use `npx` or `yarn`:
+
+**Using npx:**
 ```bash
-port kill 3000
+npx port ls
+npx port check 3000
+npx port kill 3000
+```
+
+**Using yarn:**
+```bash
+yarn port ls
+yarn port check 3000
+yarn port kill 3000
 ```
 
 ## Why Use port?
@@ -89,4 +95,3 @@ npm start
 ## License
 
 MIT
-# port
